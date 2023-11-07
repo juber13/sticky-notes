@@ -37,14 +37,14 @@ const createNote = (text , color) => {
 
 form.addEventListener('submit' , (e) => {
    e.preventDefault();
-   addNoteMessage.classList.add('active');
    const inputValue = e.target.children[0].value;
    const color = e.target.children[1].value;
    if(!inputValue) return;
-  const note =  createNote(inputValue , color);
-  noteContainer.appendChild(note);
-//   console.log(note);
-  e.target.reset();
+   const note =  createNote(inputValue , color);
+   noteContainer.appendChild(note);
+   //   console.log(note);
+   e.target.reset();
+   addNoteMessage.classList.add('active');
 
 });
 
@@ -55,6 +55,8 @@ function checkIsEmpty(){
         console.log("first")
         // addNoteMessage.style.display = "block";
         addNoteMessage.style.display = "block";
+        window.location.reload();
     }
+
 }
 
