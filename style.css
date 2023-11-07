@@ -1,0 +1,68 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    /* background: #ddd; */
+}
+
+main{
+    width: 60%;
+    margin: 10px auto;
+}
+
+.center{
+    /* background: #000; */
+    /* color: #fff; */
+    margin-top: 20px;
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.center .note{
+    padding: 1rem;
+    border-top: 3px solid #000;
+    width: 200px;
+    height: 120px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    background: #fff;
+}
+
+textarea{
+    color: green;
+    font-size: 15px;
+    resize: none;
+    border-radius: 6px;
+}
+
+ input[type="color"]{
+    border: none;
+    width: 60px;
+    height: 30px;
+ }
+
+input[type="submit"] {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.delete-btn{
+    padding: 0.4rem;
+    border: none;
+    cursor: pointer;
+    color: tomato;
+}
+
+
+.active{
+    display: none;
+}
